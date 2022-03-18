@@ -20,7 +20,6 @@ public abstract class EmployeeDatabase extends RoomDatabase {
                     context.getApplicationContext(),
                     EmployeeDatabase.class,
                     "employee_database")
-                    .allowMainThreadQueries()
                     .build();
         }
         return instance;
